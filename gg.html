@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="mydiv">
+        <input class="mybtn" onclick="myfunc(this)">click</input>
+        <span class="myspan">manoj</span>
+    </div>
+
+    <script type="text/javascript">
+      const myfunc=(val)=>{
+        let data=val.parentElement.lastElementChild.className;
+        console.log(data);
+        console.log(val.textContent);
+      }
+      let data =[
+        {
+          id:1,
+          name:"manoj",
+          sport:"cricket",
+        },
+        {
+          id:2,
+          name:"pritam",
+          sport:"football",
+        },
+        {
+          id:3,
+          name:"ranjan",
+          sport:"football",
+        },
+        {
+          id:4,
+          name:"pritam",
+          sport:"football",
+        },
+        {
+          id:5,
+          name:"pritam",
+          sport:"football",
+        },
+        {
+          id:6,
+          name:"pritam",
+          sport:"football",
+        },
+        {
+          id:7,
+          name:"pritam",
+          sport:"football",
+        },
+        {
+          id:8,
+          name:"pritam",
+          sport:"football",
+        },
+
+      ];
+      let ourdata=data.map(currdata=>{
+        return{
+          id:currdata.id,
+          name:currdata.name,
+        }
+      });
+      console.log("mydata",ourdata);
+
+
+
+    </script>
+  </body>
+</html>

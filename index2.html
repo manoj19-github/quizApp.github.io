@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css" integrity="sha512-P9vJUXK+LyvAzj8otTOKzdfF1F3UYVl13+F8Fof8/2QNb8Twd6Vb+VD52I7+87tex9UXxnzPgWA3rH96RExA7A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles.css">
+
+  </head>
+  <body>
+    <div class="grand-container">
+
+      <!-- sidebar start -->
+      <section class="sidebar">
+        <h3 class="total-question">
+          Total Question :
+          <span class="question-number-total">20</span>
+        </h3>
+        <h5 class="total-question-answered">
+          Total Answered :
+          <span class="question-number-answered"></span>
+        </h5><br/>
+        <h5 class="total-question-skipped">
+          Total Skipped :
+          <span class="question-number-skipped"></span>
+        </h5>
+        <div class="question-index-sidebar">
+
+        </div>
+        <div class="question-legend">
+          <h5>LEGEND :</h5>
+          <div class="answered">
+            <div class="answered-color-success">
+            </div>
+            <p>Answered</p>
+          </div>
+          <div class="answered">
+            <div class="answered-color-visited">
+            </div>
+            <p>Skipped</p>
+          </div>
+        </div>
+        <div class="disclaimer">
+          <h3>DISCLAIMER</h3>
+          <h5>Please do not <span style="color:red">close</span> or <span style="color:red"> Refresh </span>this page,else you may not be able to attempt to the quiz again</h5>
+        </div>
+      </section>
+      <!-- sidebar end -->
+
+      <!-- main section start -->
+      <section class="main-content">
+        <header class="main-header">
+          <div class="question-index">
+            <div class="question-no">
+              <i class="fa fa-laptop" aria-hidden="true"></i>
+              <p class="question-num">1</p>
+            </div>
+
+            <h4>.question </h4>
+          </div>
+          <div class="title-tag">
+            <h1>Techno Quiz</h1>
+
+          </div>
+
+          <div class="timer-block">
+            <i class="fa fa-clock-o" aria-hidden="true"></i>
+            <div class="border-right"></div>
+            <span class="timer-text">00:00:00</span>
+          </div>
+        </header>
+        <article class="quiz-bar">
+          <div class="question-block">
+              <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+              <h2 class="question-text">this is my question and it is all</h2>
+          </div>
+
+          <div class="answer-bar">
+            <!-- <div class="answer-bar-block">answer1</div>
+            <div class="answer-bar-block">answer1</div>
+            <div class="answer-bar-block">answer1</div>
+            <div class="answer-bar-block">answer1</div>
+            <div class="answer-bar-block">answer1</div> -->
+          </div>
+        </article>
+        <footer class="main-footer">
+
+          <button type="button" name="button" class="main-footer-btn next next-button" id="nextBtn">Next</button>
+        </footer>
+      </section>
+      <!-- main section start -->
+
+
+    </div>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="text/javascript" src="app2.js">
+
+    </script>
+  </body>
+</html>

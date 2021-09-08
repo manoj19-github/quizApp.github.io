@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css" integrity="sha512-P9vJUXK+LyvAzj8otTOKzdfF1F3UYVl13+F8Fof8/2QNb8Twd6Vb+VD52I7+87tex9UXxnzPgWA3rH96RExA7A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles2.css">
+  </head>
+  <body>
+    <nav>
+
+      <img src="https://images-na.ssl-images-amazon.com/images/I/61axDBOB7+L.png" alt="">
+      <h1>Techno Quiz</h1>
+    </nav>
+
+    <section class="main-content">
+      <button type="button" class="btn-quiz" name="button">Start Quiz</button>
+      <form class="form" action="index.html" method="post">
+
+          <span class="close">&times;</span>
+
+
+        <div class="form-group">
+          <label for="">Enter Your name</label>
+          <input type="text" name="name" value="" class="form-control" onchange="showError(this)">
+          <span class="error_message" id="error_message_name">username is required</span>
+        </div>
+        <div class="form-group">
+          <label for="">Category</label>
+          <select type="text" name="category" value="" class="form-control" onchange="showError(this)">
+            <option value="">Any Category</option>
+            <option value="linux">Linux</option>
+            <option value="bash">Bash</option>
+            <option value="Uncategorized">Uncategorized</option>
+            <option value="docker">Docker</option>
+            <option value="sql">SQL</option>
+            <option value="cms">CMS</option>
+            <option value="code">Code</option>
+            <option value="devops">DevOps</option>
+
+          </select>
+          <span class="error_message" id="error_message_category">category is required</span>
+        </div>
+        <div class="form-group">
+          <label for="">Difficulty</label>
+          <select  name="name" value="" class="form-control" onchange="showError(this)">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+          </select>
+          <span class="error_message" id="error_message_difficulty">difficulty is required</span>
+        </div>
+        <div class="form-group mysubmit">
+          <input type="button" onclick="startquiz()" name="" value="start" class="submit">
+
+        </div>
+
+      </form>
+
+    </section>
+    <script type="text/javascript" src="app.js">
+
+    </script>
+  </body>
+  </html>
